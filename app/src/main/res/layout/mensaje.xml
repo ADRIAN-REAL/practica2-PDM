@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="12dp"
     tools:context=".Mensaje">
 
     <TextView
@@ -19,7 +20,7 @@
         android:layout_height="wrap_content"
         android:gravity="left"
         android:text="E-mail"
-        android:textSize="30sp" />
+        android:textSize="20sp" />
     
     <EditText
         android:id="@+id/E-mail"
@@ -32,7 +33,7 @@
         android:layout_height="wrap_content"
         android:gravity="left"
         android:text="Phone"
-        android:textSize="35sp" />
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/Phone"
@@ -45,23 +46,36 @@
         android:layout_height="wrap_content"
         android:gravity="left"
         android:text="Message"
-        android:textSize="30sp" />
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/Message"
         android:layout_width="390dp"
-        android:layout_height="150dp"
+        android:layout_height="110dp"
         android:hint="Message" />
+
+    <CheckBox
+        android:id="@+id/copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send a copy to yourself"/>
+
+    <CheckBox
+        android:id="@+id/subscribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subscribe to our newsletter"/>
 
     <Button
         android:id="@+id/Enviar"
-        android:layout_width="100dp"
+        android:layout_width="390dp"
         android:layout_height="50dp"
         android:layout_below="@+id/Message"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:background="@color/colorAccent"
-        android:text="Enviar" />
+        android:background="#FF6600"
+        android:text="Enviar"
+        android:textAlignment="center" />
 
 
 </LinearLayout>
